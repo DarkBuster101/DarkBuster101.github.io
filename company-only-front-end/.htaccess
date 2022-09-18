@@ -2,3 +2,8 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+RewriteCond %{HTTP_HOST} ^darkbuster101.github.io[nc]
+RewriteRule ^(.*)$ https://darkbuster101.github.io/company-only-front-end/$1 [r=301,nc]
+
+RedirectMatch 301 /company-only-front-end(.*) //$1
