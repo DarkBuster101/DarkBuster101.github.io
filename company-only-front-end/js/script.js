@@ -17,7 +17,7 @@ $('.navbar-toggler').on('click', function () {
     }
 
     if ($('.gallery-container-image').css('margin-top') === '-160px') {
-        $('.gallery-').css('margin-top', '-300px')
+        $('.gallery-container-image').css('margin-top', '-300px')
         $('.black').css('display', 'block')
     } else if ($('.gallery-container-image').css('margin-top', '-300px')){
         $('.gallery-container-image').css('margin-top', '-160px')
