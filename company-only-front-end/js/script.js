@@ -1,29 +1,34 @@
-$('.navbar-toggler').on('click', function () {
+$('#company-nav').on('click', function () {
 
     if ($('.container-image').css('margin-top') === '-160px') {
-        $('.container-image').css('margin-top', '-300px')
+        $('.container-image').css('margin-top', '-330px')
         $('.black').css('display', 'block')
-    } else if ($('.container-image').css('margin-top', '-300px')){
+    } else if ($('.container-image').css('margin-top', '-330px')){
         $('.container-image').css('margin-top', '-160px')
         $('.black').css('display', 'none')
     }
+})
+
+$('#career-nav').on('click', function () {
 
     if ($('.career-container-image').css('margin-top') === '-160px') {
-        $('.career-container-image').css('margin-top', '-300px')
+        $('.career-container-image').css('margin-top', '-330px')
         $('.black').css('display', 'block')
-    } else if ($('.career-container-image').css('margin-top', '-300px')){
+    } else if ($('.career-container-image').css('margin-top', '-330px')){
         $('.career-container-image').css('margin-top', '-160px')
         $('.black').css('display', 'none')
     }
+})
+
+$('#gallery-nav').on('click', function () {
 
     if ($('.gallery-container-image').css('margin-top') === '-160px') {
-        $('.gallery-container-image').css('margin-top', '-300px')
+        $('.gallery-container-image').css('margin-top', '-330px')
         $('.black').css('display', 'block')
-    } else if ($('.gallery-container-image').css('margin-top', '-300px')){
+    } else if ($('.gallery-container-image').css('margin-top', '-330px')){
         $('.gallery-container-image').css('margin-top', '-160px')
         $('.black').css('display', 'none')
     }
-
 })
 
 
