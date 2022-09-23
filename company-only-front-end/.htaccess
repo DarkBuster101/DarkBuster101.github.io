@@ -1,11 +1,9 @@
 RewriteEngine on
-
+# 301 --- https://darkbuster101.github.io/company-only-front-end/index => https://www.dongjin.se/main
+RewriteCond %{HTTP_HOST} ^darkbuster101\.github\.io$
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
-
-# 301 --- https://darkbuster101.github.io/company-only-front-end/index => https://www.dongjin.se/main
-RewriteCond %{HTTP_HOST} ^darkbuster101\.github\.io$
 RewriteRule ^company-only-front-end/index$ https://www.dongjin.se/main? [L,R=301]
 
 
