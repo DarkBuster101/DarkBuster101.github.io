@@ -4,7 +4,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 # 301 --- https://darkbuster101.github.io/company-only-front-end/index => https://darkbuster101.github.io/company-only-front-end/main
-RewriteRule ^company\-only\-front\-end/index$ /company\-only\-front\-end/main? [L,R=301]
+RewriteRule ^company\-only\-front\-end/$ /company\-only\-front\-end/main? [L,R=301]
 
 
 
