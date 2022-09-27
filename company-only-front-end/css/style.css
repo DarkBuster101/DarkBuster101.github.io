@@ -48,7 +48,7 @@ a:hover {
 }
 
 .career-container-image {
-    background-image: url("../istockphoto-1353025730-1024x1024.jpg");
+    background-image: url("../career.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -170px;
@@ -60,7 +60,7 @@ a:hover {
 }
 
 .gallery-container-image {
-    background-image: url("../istockphoto-651616314-1024x1024.jpg");
+    background-image: url("../gallery.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -413,7 +413,7 @@ a:hover {
         margin-top: 110px;
     }
     .career-container-image {
-        background-position-y: initial;
+        background-position-y: -50px;
         background-position-x: initial;
     }
 }
