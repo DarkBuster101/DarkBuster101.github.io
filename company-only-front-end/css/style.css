@@ -1,3 +1,14 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Work sans', sans-serif;
+}
+p {
+    font-family: 'Taviraj', serif;
+}
+
+footer {
+    font-family: Lato, sans-serif;
+}
+
 .red {
     background: mediumvioletred;
 }
@@ -9,6 +20,7 @@
 .light-coral {
     background: lightcoral;
 }
+
 
 a {
     text-decoration: none;
@@ -35,7 +47,7 @@ a:hover {
 }
 
 .container-image {
-    background-image: url("../DJI_0255.JPG");
+    background-image: url("../main-pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -56,7 +68,6 @@ a:hover {
     width: 100%;
     font-weight: 400;
     height: 100%;
-    margin-top: -160px;
 }
 
 .gallery-container-image {
@@ -68,7 +79,6 @@ a:hover {
     width: 100%;
     font-weight: 400;
     height: 100%;
-    margin-top: -160px;
 }
 
 .container-fluid {
@@ -96,6 +106,9 @@ a:hover {
 
 .navbar {
     padding-top: 0;
+    font-family: Lato, sans-serif;
+    font-weight: 800;
+    margin-top: 160px;
 }
 
 .navbar-dark .navbar-toggler {
@@ -107,6 +120,23 @@ a:hover {
     background-color: rgb(0, 0, 0, 0.5);
 }
 
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+.container-fluid {
+    padding-bottom: 0;
+}
+
+.navbar-fixed {
+    position: fixed;
+    margin-top: 220px;
+}
+
+.dongjin-navbar {
+}
 
 
 .logo-text {
@@ -118,10 +148,11 @@ a:hover {
     color: white;
     box-sizing: border-box;
     text-align: left;
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 1000;
     width: 60%;
-    padding: 350px 30px 250px;
+    padding: 175px 30px 250px;
+    font-family: 'Taviraj', serif;
 }
 
 .product-text {
@@ -136,33 +167,38 @@ a:hover {
 
 .button {
     font-size: 18px;
+    font-weight: 300;
     padding: 10px 30px;
-    border: solid 2px mediumaquamarine;
+    border: solid 2px #124C83;
+    border-radius: 40px;
     color: white;
-    background: mediumaquamarine;
+    background: #124C83;
     transition: 0.7s all;
     text-decoration: none;
+    font-family: 'Work sans', sans-serif;
 }
 
 .button:hover {
     background: transparent;
-    color: mediumaquamarine;
+    color: #124C83;
 
 }
 
 .intro-text {
     text-align: left;
-    padding: 30px 100px;
+    padding: 60px 100px;
 }
 
 .intro-text h4 {
     font-weight: 600;
-    font-size: calc(0.825rem + 0.9vw);
+    font-size: calc(0.975rem + 0.9vw);
+    font-family: 'Work sans', sans-serif;
 }
 
 .intro-text p {
     margin-bottom: 20px;
-    font-size: calc(0.825rem + 0.1vw);
+    font-size: calc(0.795rem + 0.1vw);
+    font-family: 'Taviraj', serif;
 }
 
 .intro-text-debug {
@@ -249,11 +285,27 @@ a:hover {
 
 .pos {
     width: 50%;
+    position: relative;
 }
 
 .sta {
     width: 50%;
     margin-left: -1rem;
+    position: relative;
+}
+
+.sort-icon {
+    position: absolute;
+    left: 72px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.sta-sort-icon {
+    position: absolute;
+    left: 60px;
+    top: 5px;
+    cursor: pointer;
 }
 
 .career-group-item-name {
@@ -313,7 +365,7 @@ a:hover {
     margin-top: 210px;
 }
 
-.black {
+.background {
     background: #000;
     opacity: 0.7;
     bottom: 0;
@@ -330,6 +382,7 @@ a:hover {
 
 .navbar {
     z-index: 4000;
+
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -348,40 +401,54 @@ a:hover {
 
 }
 
+.statement-text-title {
+    font-family: 'Work sans', sans-serif;
+    font-weight: 600;
+}
+
 .statement-text-kr h5{
     margin-bottom: 1rem;
 }
 
 .statement-text-main {
     margin-top: 20px;
+    font-family: 'Taviraj', serif;
+}
+
+.c-color {
+    color: #124C83;
+}
+
+.show-background {
+    display: block;
+}
+
+.copyright {
+    font-size: 14px;
 }
 
 @media screen and (min-width: 992px){
     .navbar-dark .navbar-nav .nav-link {
-        color: rgb(0, 0, 0, .55);
+        color: #004892;
     }
 
     .navbar-dark .navbar-nav .nav-link:hover {
-        color: rgb(0, 0, 0, .55);
+        color: rgba(0, 72, 146, 0.55);
     }
 
     .navbar-dark .navbar-nav .nav-link:focus {
-        color: rgb(0, 0, 0, .55);
+        color: rgba(0, 72, 146, 0.55);
     }
 }
 
-.career-text-de {
+.text-de {
     color: #dee2e6!important;
 }
 
 @media screen and (max-width: 992px) {
-    /*.container-image {*/
-    /*    margin-top: -300px;*/
-    /*    background-position-y: 0px;*/
-    /*}*/
-    /*.hero-text {*/
-    /*    padding: 250px 30px 150px;*/
-    /*}*/
+    .hero-text {
+        font-size: 34px;
+    }
     .intro-text {
         width: 80%;
         padding: 10px 10px 10px 30px;
@@ -399,7 +466,7 @@ a:hover {
     .hero-text {
         text-align: center;
         width: 100%;
-        padding: 170px 30px 150px;
+        padding: 120px 30px 150px;
     }
     .border-right {
         border: none;
@@ -423,7 +490,7 @@ a:hover {
         font-size: 18px;
         text-align: center;
         width: 100%;
-        padding: 170px 30px 150px;
+        padding: 70px 30px 150px;
         margin-top: 0;
     }
     .button {

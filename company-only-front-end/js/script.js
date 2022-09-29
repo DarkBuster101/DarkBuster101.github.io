@@ -1,34 +1,22 @@
-$('#company-nav').on('click', function () {
+$('#company-nav').on('click', function (e) {
 
-    if ($('.container-image').css('margin-top') === '-160px') {
-        $('.container-image').css('margin-top', '-330px')
-        $('.black').css('display', 'block')
-    } else if ($('.container-image').css('margin-top', '-330px')){
-        $('.container-image').css('margin-top', '-160px')
-        $('.black').css('display', 'none')
-    }
+    $('.background').toggleClass("show-background")
+    $('.dongjin-navbar').toggleClass("navbar-fixed")
+    e.preventDefault()
 })
 
-$('#career-nav').on('click', function () {
+$('#career-nav').on('click', function (e) {
 
-    if ($('.career-container-image').css('margin-top') === '-160px') {
-        $('.career-container-image').css('margin-top', '-330px')
-        $('.black').css('display', 'block')
-    } else if ($('.career-container-image').css('margin-top', '-330px')){
-        $('.career-container-image').css('margin-top', '-160px')
-        $('.black').css('display', 'none')
-    }
+    $('.background').toggleClass("show-background")
+    $('.dongjin-navbar').toggleClass("navbar-fixed")
+    e.preventDefault()
 })
 
-$('#gallery-nav').on('click', function () {
+$('#gallery-nav').on('click', function (e) {
 
-    if ($('.gallery-container-image').css('margin-top') === '-160px') {
-        $('.gallery-container-image').css('margin-top', '-330px')
-        $('.black').css('display', 'block')
-    } else if ($('.gallery-container-image').css('margin-top', '-330px')){
-        $('.gallery-container-image').css('margin-top', '-160px')
-        $('.black').css('display', 'none')
-    }
+    $('.background').toggleClass("show-background")
+    $('.dongjin-navbar').toggleClass("navbar-fixed")
+    e.preventDefault()
 })
 
 
@@ -40,7 +28,7 @@ $('.gallery-item').sort(function (a, b) {
 }).appendTo($('#gallery'))
 
 
-$('.career-con-header>.pos p').on('click', function () {
+$('.career-con-header>.pos .sort-icon').on('click', function () {
     var els = $('.career-li').get();
 
     els.sort(function(el1, el2){
@@ -50,7 +38,7 @@ $('.career-con-header>.pos p').on('click', function () {
     $('.career-ul').append(els)
 })
 
-$('.career-con-header>.sta p').on('click', function () {
+$('.career-con-header>.sta .sta-sort-icon').on('click', function () {
     $('.career-li').sort(function (a, b) {
 
         var contentA =parseInt( $(a).data('sort'));
