@@ -1,21 +1,49 @@
 $('#company-nav').on('click', function (e) {
 
+    if ($('#navbarTogglerDemo02').hasClass("navbar-fixed")) {
+        $('.dongjin-navbar').addClass("cm-collapsing")
+        setTimeout(function () {
+            $('.dongjin-navbar').removeClass('cm-collapsing');
+        }, 350);
+    }
+
     $('.background').toggleClass("show-background")
     $('.dongjin-navbar').toggleClass("navbar-fixed")
+    $('html, body').toggleClass("scroll-lock")
+
     e.preventDefault()
 })
 
 $('#career-nav').on('click', function (e) {
 
+    if ($('#navbarTogglerDemo02').hasClass("navbar-fixed")) {
+        $('.dongjin-navbar').addClass("cm-collapsing")
+        setTimeout(function () {
+            $('.dongjin-navbar').removeClass('cm-collapsing');
+        }, 350);
+    }
+
     $('.background').toggleClass("show-background")
     $('.dongjin-navbar').toggleClass("navbar-fixed")
+    $('html, body').toggleClass("scroll-lock")
+
     e.preventDefault()
 })
 
 $('#gallery-nav').on('click', function (e) {
 
+
+    if ($('#navbarTogglerDemo02').hasClass("navbar-fixed")) {
+        $('.dongjin-navbar').addClass("cm-collapsing")
+        setTimeout(function () {
+            $('.dongjin-navbar').removeClass('cm-collapsing');
+        }, 350);
+    }
+
     $('.background').toggleClass("show-background")
     $('.dongjin-navbar').toggleClass("navbar-fixed")
+    $('html, body').toggleClass("scroll-lock")
+
     e.preventDefault()
 })
 
