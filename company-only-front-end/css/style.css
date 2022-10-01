@@ -327,11 +327,6 @@ a:hover {
     margin-top: -160px;
 }
 
-.modal-debug {
-    width: 50vw;
-    transform: translateX(-100px);
-}
-
 .modal-time-1 {
     transform: translateY(230px);
 }
@@ -449,6 +444,9 @@ a:hover {
 }
 
 @media screen and (max-width: 992px) {
+    .button {
+        padding: 10px 20px;
+    }
     .hero-text {
         font-size: 34px;
     }
@@ -459,9 +457,6 @@ a:hover {
     }
     .pic-4 {
         margin-top: -80px;
-    }
-    .modal-debug {
-        transform: translateX(30px);
     }
     .modal-time-1,.modal-time-2,.modal-time-3,.modal-time-4 {
         transform: translateY(20px);
@@ -475,7 +470,7 @@ a:hover {
         border: none;
     }
     .career-modal-1 {
-        transform: translateX(30px);
+        transform: translateX(40px);
         margin-top: 80px;
     }
     .career-modal-2 {
@@ -498,6 +493,7 @@ a:hover {
     }
     .button {
         font-size: 14px;
+        padding: 10px 15px;
     }
     .intro-text {
         padding: 20px;
@@ -517,10 +513,6 @@ a:hover {
     }
     .pic-4 {
         margin-top: -15px;
-    }
-    .modal-debug {
-        width: 100%;
-        transform: translateX(0px);
     }
     .modal-time-1,.modal-time-2,.modal-time-3,.modal-time-4 {
         transform: translateY(20px);
