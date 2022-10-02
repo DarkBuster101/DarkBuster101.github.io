@@ -47,6 +47,14 @@ $('#gallery-nav').on('click', function (e) {
     e.preventDefault()
 })
 
+$(window).on('resize', function () {
+    if ($(window).width > 992) {
+        $('.dongjin-navbar').removeClass("navbar-fixed")
+        $('.background').removeClass("show-background")
+        $('html, body').removeClass("scroll-lock")
+    }
+})
+
 
 $('.gallery-item').sort(function (a, b) {
 
