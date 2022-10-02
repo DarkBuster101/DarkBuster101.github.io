@@ -5,5 +5,6 @@
     <file url="file://$PROJECT_DIR$/company-only-front-end/gallery.html" libraries="{aos, jquery-3.6.0}" />
     <file url="file://$PROJECT_DIR$/company-only-front-end/index.html" libraries="{aos}" />
     <file url="file://$PROJECT_DIR$/company-only-front-end/js/script.js" libraries="{jquery-3.6.0}" />
+    <file url="PROJECT" libraries="{style}" />
   </component>
 </project>
