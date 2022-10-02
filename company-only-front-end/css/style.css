@@ -437,6 +437,17 @@ a:hover {
     .navbar-dark .navbar-nav .nav-link:focus {
         color: rgba(0, 72, 146, 0.55);
     }
+    .show-background {
+        display: none;
+    }
+    .navbar-fixed {
+        margin-top: 0;
+        position: relative;
+    }
+    .scroll-lock {
+        height: auto;
+        overflow: auto;
+    }
 }
 
 .text-de {
